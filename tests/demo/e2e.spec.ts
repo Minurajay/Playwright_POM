@@ -1,5 +1,5 @@
 import { test } from '../../utils/fixtures'; // Import the fixture
-import testDataSets from '../../data/testData.json';
+import testDataSets from '../../data/testdata.json';
 
 test.describe('End-to-End Test', () => {
   for (const testData of testDataSets) {
