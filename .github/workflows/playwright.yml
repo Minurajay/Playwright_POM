@@ -23,7 +23,7 @@ jobs:
         echo "Data directory contents:"
         ls -la data/
         echo "JSON file contents:"
-        cat data/testData.json
+        cat data/testdata.json
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
