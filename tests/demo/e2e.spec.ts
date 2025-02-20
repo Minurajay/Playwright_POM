@@ -1,5 +1,5 @@
 import { test } from '../../utils/fixtures'; // Import the fixture
-const testDataSets = require('../../data/testData.json');
+import testDataSets from '../../data/testData.json';
 
 test.describe('End-to-End Test', () => {
   for (const testData of testDataSets) {

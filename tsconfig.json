@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"]
+      },
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "target": "ES2022",
+      "module": "commonjs"
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+  }
