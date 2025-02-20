@@ -1,0 +1,57 @@
+//run all tests on all browsers in headless mode
+npx playwright test
+
+//show report
+npx playwright show-report
+
+Example Scenario
+9 tests: Test1, Test2, ..., Test9
+4 workers: Worker1, Worker2, Worker3, Worker4
+
+Execution order:
+Round 1: Worker1 runs Test1, Worker2 runs Test2, Worker3 runs Test3, Worker4 runs Test4.
+
+Round 2: As workers finish, they pick the next test:
+Worker1 finishes Test1 → starts Test5.
+Worker2 finishes Test2 → starts Test6.
+
+And so on, until all tests are completed.
+
+//running with customized workers
+npx playwright test --workers 3
+
+//run a specific test file
+npx playwright test tests/example.spec.js
+
+//run files that have one or two in the file name
+npx playwright test example
+
+//run on specific browser
+npx playwright test --project=chromium
+
+//run tests in headed
+npx playwright test --project=chromium --headed
+
+//debug tests
+npx playwright test --project=chromium --debug
+
+//debug a specific file
+npx playwright test example.spec.js --project=chromium --debug
+
+//run a specific file in a browser headed
+npx playwright test example.spec.js --project=chromium --headed
+
+//codegen feature
+npx playwright codegen
+
+//Go to a specific website
+npx playwright codegen https://google.com
+
+//UI mode
+npx playwright test --ui
+
+//Clean the allure results
+npx allure generate ./allure-results --clean
+
+//Open the allure report
+npx allure open ./allure-report

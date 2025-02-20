@@ -1,0 +1,37 @@
+[
+  {
+    "login": {
+      "email": "minura@practice.com",
+      "password": "Dummypassword12#"
+    },
+    "search": {
+      "product": "IPHONE"
+    },
+    "checkout": {
+      "creditCardNumber": "4542 9931 9292 2293",
+      "cvv":"123",
+      "name": "test",
+      "country": "Arg",
+      "expiryMonth": "05",
+      "expiryDate": "08"
+    }
+  },
+  {
+    "login": {
+      "email": "minura@practice1.com",
+      "password": "Dummypassword13#"
+    },
+    "search": {
+      "product": "ZARA"
+    },
+    "checkout": {
+      "creditCardNumber": "4542 9931 9292 2293",
+      "cvv":"523",
+      "name": "John",
+      "country": "Sri",
+      "expiryMonth": "05",
+      "expiryDate": "08"
+    }
+  }
+]
+
